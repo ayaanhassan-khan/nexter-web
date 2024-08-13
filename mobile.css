@@ -1,0 +1,31 @@
+@media only screen and (max-width:870px) {
+
+    .container {
+        width: 200%;
+        grid-template-columns: 6rem 1fr;
+        grid-template-rows: 80vh min-content 1fr;
+        grid-template-areas: "nav header"
+                             "nav realtors"
+                             "nav services";
+    }
+
+    .realtors {
+        grid-column: 2 / span 2;
+    }
+
+    .realtors h3 {
+        margin-top: 1rem;
+    }
+
+    .realtors .realtor-content {
+        grid-template-columns: repeat(3, min-content);
+        grid-template-rows: 100px;
+        row-gap: 0;
+    }
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
